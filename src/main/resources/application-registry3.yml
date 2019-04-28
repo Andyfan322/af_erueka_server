@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: service-registry
+server:
+  port: 19003
+eureka:
+  instance:
+    hostname: service-registry3
+    appname: service-registry
+  client:
+    service-url:
+      defaultZone:  http://service-registry1:19001/eureka,http://service-registry2:19002/eureka
+    register-with-eureka: true
+    fetch-registry: false
