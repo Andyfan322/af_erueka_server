@@ -1,15 +1,18 @@
 #给自己本地使用
 spring:
   application:
-    name: service-registry
+    name: server-registry
 server:
   port: 19000
 eureka:
+#  server:
+#    # 单机环境下关闭自我保护
+#    enable-self-preservation: false
   instance:
-    hostname: service-registry0
-    appname: service-registry0
+    hostname: server-registry0
+    appname: server-registry0
   client:
     service-url:
-      defaultZone:  http://service-registry0:19000/eureka
+      defaultZone:  http://server-registry0:19000/eureka
     register-with-eureka: false
     fetch-registry: false

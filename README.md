@@ -28,10 +28,10 @@ Eureka Server之间通过复制的方式完成数据的同步，Eureka还提供�
   1. 三个节点，分别为regisert1、regisert2、regisert3
   2. 默认项目不指定节点启动的为registry0(为本地特意准备，线上不需要考虑此节点)
   3. 在本地host中新增
-      * localhost service-registry0
-      * localhost service-registry1
-      * localhost service-registry2
-      * localhost service-registry3
+      * localhost server-registry0
+      * localhost server-registry1
+      * localhost server-registry2
+      * localhost server-registry3
   4. 部署本项目最好在三个独立机器或者容器内，对勇端口为9001，9002，9003
   5. 启动方式
     * nohup java -jar af-eureka-server-1.0.0-RELEASE.jar --spring.profiles.active=registry1 &

@@ -1,14 +1,14 @@
 spring:
   application:
-    name: service-registry
+    name: server-registry
 server:
   port: 19002
 eureka:
   instance:
-    hostname: service-registry2
-    appname: service-registry
+    hostname: server-registry2
+    appname: server-registry
   client:
     service-url:
-      defaultZone:  http://service-registry1:19001/eureka,http://service-registry3:19003/eureka
+      defaultZone:  http://server-registry1:19001/eureka,http://server-registry3:19003/eureka
     register-with-eureka: true
     fetch-registry: false
