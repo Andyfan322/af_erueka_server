@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<org.springframework.cloud_version>Edgware.SR5</org.springframework.cloud_version>
+		<org.springframework.cloud_version>Edgware.RELEASE</org.springframework.cloud_version>
 		<org.springframework.boot_version>1.5.19.RELEASE</org.springframework.boot_version>
 	</properties>
 
