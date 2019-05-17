@@ -10,5 +10,3 @@ eureka:
   client:
     service-url:
       defaultZone:  http://server-registry2:19001/eureka,http://server-registry3:19003/eureka
-    register-with-eureka: true
-    fetch-registry: false

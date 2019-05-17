@@ -32,7 +32,7 @@ Eureka Server之间通过复制的方式完成数据的同步，Eureka还提供�
       * localhost server-registry1
       * localhost server-registry2
       * localhost server-registry3
-  4. 部署本项目最好在三个独立机器或者容器内，对勇端口为9001，9002，9003
+  4. 部署本项目最好在三个独立机器或者容器内，对应端口为9001，9002，9003
   5. 启动方式
     * nohup java -jar af-eureka-server-1.0.0-RELEASE.jar --spring.profiles.active=registry1 &
     * nohup java -jar af-eureka-server-1.0.0-RELEASE.jar --spring.profiles.active=registry2 &
